@@ -8,10 +8,10 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     zoomOffset: -1,
 	detectRetina:false,
 }).addTo(mymap);
-var marker = L.marker([56.312304, 38.138553]).addTo(mymap);
+/*var marker = L.marker([56.312304, 38.138553]).addTo(mymap);
 marker.on('mouseover', function(ev) {
   ev.target.openPopup();
-});
+});*/
 //marker.on('mouseout', function(ev) {
 //  ev.target.closePopup();
 //});
@@ -20,18 +20,26 @@ var sidebar = L.control.sidebar('sidebar', {
     position: 'left'
 });
 
-map.addControl(sidebar);
+mymap.addControl(sidebar);
+/*setTimeout(function () {
+  sidebar.show();
+}, 500);
+sidebar.setContent('test <b>Hello</b> test');*/
+var marker = L.marker([56.312304, 38.138553]).addTo(mymap).on('click', function () {
+  sidebar.setContent("<img src='https://lh3.googleusercontent.com/l_IGDkkyR2slVjPZt41yfJHu0eM-jSpjtCmrNufaLQXP_0Aw8KTuwrPYCh1q9F9n80m1uUZvvYtHV48ihA=w1080-h608-p-no-v0' width='250' height='200'><br><b>Музей советского детства<br></b>Музей, в котором собраны игрушки, игры и символы советского детства. Это уникальное место, объединяющее поколение детей, растущих в эпоху быстро меняющегося технологического прогресса и поэтому с пеленок, умеющих пользоваться мобильными телефонами, и поколение взрослых, выросших в то время, когда на улице было намного интереснее, чем дома. Родителей, бабушек и дедушек здесь ждут приятные воспоминания. А дети поймут, как проходило детство родителей без мобильных телефонов, интернета и компьютерных игр. В музее проводятся экскурсии, мастер-классы по выжиганию и росписи деревянных сувениров. Также в музее представлены игровые автоматы советского времени, которые работают до сих пор. Для игры в них необходимо приобрести специальные жетоны.<b><br>Адрес:<br></b> ул. Карла Маркса, 7, корп. 16, Сергиев Посад (эт. 2)<b><br>Контакты:</b>https://vk.com/cccp_toys</b><br>   https://www.instagram.com/cccp_toys/</b><br>  +7 (901) 528-73-11 <b><br> Сайт: </b> https://toysmuseum.business.site/");
+  sidebar.show();
+});
 // Show sidebar
-sidebar.show();
+//sidebar.show();
 
 // Hide sidebar
-sidebar.hide();
+//sidebar.hide();
 
 // Toggle sidebar visibility
-sidebar.toggle();
+//sidebar.toggle();
 
 // Check sidebar visibility
-var visible = sidebar.isVisible();
+//var visible = sidebar.isVisible();
 
 
 
@@ -40,10 +48,10 @@ var visible = sidebar.isVisible();
 
 //var marker = L.marker([56.312304, 38.138553]).addTo(mymap);
 //function onClick(e) {alert(this.latlng);}
-marker.addTo(mymap);
-var marker1 = L.marker([56.312163, 38.136465]).addTo(mymap);
+//marker.addTo(mymap);
+//var marker1 = L.marker([56.312163, 38.136465]).addTo(mymap);
 
-var marker2 = L.marker([56.307547, 38.131288]).addTo(mymap);
+/*var marker2 = L.marker([56.307547, 38.131288]).addTo(mymap);
 var marker3 = L.marker([56.301281, 38.167801]).addTo(mymap);
 var marker4 = L.marker([56.293981148751925, 38.15115628817213]).addTo(mymap);
 var marker6 = L.marker([56.309027088079816, 38.13417061198824]).addTo(mymap);
@@ -62,4 +70,4 @@ marker7.bindPopup("<img scr='https://avatars.mds.yandex.net/get-altay/2094876/2a
 marker8.bindPopup("<img scr='https://in-posad.ru/img/2020/03/1600x1200/RxJA.jpg' width=250 height=200><br><b>Art Студия Натальи Курышевой<br><b>Творческая студия предлагает занятия живописью, графикой, интерьерным декором и многим другим. Посещать ее можно как на постоянной основе, например, для подготовки в художественные ВУЗы, так и в качестве экскурсии. Занятия в студии проходят в непринужденной творческой обстановке.<br><b>Адрес:<br></b>просп. Красной Армии, 84/22, Сергиев Посад, БЦ Dexter, этаж 3, офис 36, 37<br><b>Контакты:<br></b>instagram.com/___art__room___<br></b>kurysheva.natali@yandex.ru<br></b>+79165044599<br><b>Сайт:<br></b>https://art-studio.blizko.ru/about ") .openPopup();
 marker9.bindPopup("<img scr='https://avatars.mds.yandex.net/get-altay/4465653/2a00000177066f25c955a1363224cfbf1a51/XXL' width=250 height=200><b>Трикотажка Place<br></b>Уникальное арт-пространство для всех, кому есть чем поделиться с другими людьми. Трикотажка – проект, который призван объединить всех. Это место можно использовать как площадку для чтения лекций, коворкинга1, различных игр и интерактивов. Это также отличное место для отдыха: здесь можно пообщаться, выпить чашку чая и почитать.<br><b>Адрес:<br></b>улица Карла Маркса, 7, 2 этаж, Сергиев Посад<br><b>Контакты:<br></b>https://www.instagram.com/trikotazhka.project/ <br></b>https://vk.com/trikotazhkafest <br></b>+7 (905) 507-91-61 ") .openPopup();
 
-
+*/
