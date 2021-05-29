@@ -2,7 +2,7 @@ var mymap = L.map('mapid').setView([56.308158, 38.133545], 14);
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data <a target="_blank" href="http://www.openstreetmap.org">OpenStreetMap.org</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-    maxZoom: 18,
+    maxZoom: 22,
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
