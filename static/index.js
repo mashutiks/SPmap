@@ -30,7 +30,7 @@ var marker = L.marker([56.312304, 38.138553]).addTo(mymap).on('click', function 
   sidebar.show();
 });
 var marker1 = L.marker([56.312163, 38.136465]).addTo(mymap).on('click', function () {
-  sidebar.setContent("<img src='/images/Landay.jpg' width=250 height=200><br><b>Кафе «Ландау»</b><br>Атмосферное кафе в центре Сергиева Посада с интересным дизайном. Основная тематика заведения – химия и физика. Подача напитков осуществляется в соответствие с тематикой кафе: колбы, пипетки и т.п. «Ландау» - отличное место для отдыха после долгих прогулок по Сергиеву Посаду.<b><br>Адрес: ул. Карла Маркса, 7, Сергиев Посад<b><br>Контакты:br></b> https://www.instagram.com/cafe_landau/ <br></b> https://www.instagram.com/cafe_landau/ <br></b> +7 (916) 677-21-15 <b><br> Сайт: </b><br> https://landausp.ru/");
+  sidebar.setContent("<img src='/imagesjpg/Landay.jpg' width=250 height=200><br><b>Кафе «Ландау»</b><br>Атмосферное кафе в центре Сергиева Посада с интересным дизайном. Основная тематика заведения – химия и физика. Подача напитков осуществляется в соответствие с тематикой кафе: колбы, пипетки и т.п. «Ландау» - отличное место для отдыха после долгих прогулок по Сергиеву Посаду.<b><br>Адрес: ул. Карла Маркса, 7, Сергиев Посад<b><br>Контакты:br></b> https://www.instagram.com/cafe_landau/ <br></b> https://www.instagram.com/cafe_landau/ <br></b> +7 (916) 677-21-15 <b><br> Сайт: </b><br> https://landausp.ru/");
   sidebar.show();
 });
 var marker2 = L.marker([56.307547, 38.131288]).addTo(mymap).on('click', function () {
